@@ -1,0 +1,3 @@
+## REQUIREMENTS
+
+- PHP 7.2

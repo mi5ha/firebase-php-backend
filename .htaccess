@@ -1,0 +1,14 @@
+Options All -Indexes
+
+Order Deny,Allow
+Deny from all
+
+<FilesMatch "^(/)?$">
+    Order Allow,Deny
+    Allow from all
+</FilesMatch>
+
+<Files index.php>
+    Order Allow,Deny
+    Allow from all
+</Files>
