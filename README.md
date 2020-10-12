@@ -12,21 +12,30 @@ This is very simple PHP application that exposes some useful API endpoints that 
 devices can not be done without a server app.
 2. This app uses [Firebase Admin SKD for PHP](https://github.com/kreait/firebase-php) under the hood
 
-## Installation
-
-### Requirements
+## Requirements
 
 - Minimal PHP version is v7.2
 - Apache
 
+## Installation
+
 ### Create new project
+
+```
+composer create-project mi5ha/firebase-backend-api
+```
 
 ### Configuration
 
-## Security
+- [Download service account key](https://console.firebase.google.com/project/_/settings/serviceaccounts/adminsdk) file from Firebase
+- Put service key file somewhere outside document root
+- Open `config/config.php`, and add the path to your service key relative to config file
 
-- **WARNING** - Its important that your service account key, i.e. json file you
+## Security Warning
+
+- Its important that your service account key, i.e. json file you
   downloaded from Firebase, is not accessible from the net
+- If you accidentally put this file inside this project, there is .htaccess that should prevent user accessing it (Apache only)
 - At the moment this application doesn't support any kind of API authentication
 
 ## API
