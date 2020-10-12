@@ -6,6 +6,14 @@ Some Firebase functionalities require that you write a server application in ord
 
 This is very simple PHP application that exposes some useful API endpoints that you can use from your mobile or web app.
 
+## Table of contents
+
+  * [Overview](#overview)
+  * [Requirements](#requirements)
+  * [Installation](#installation)
+  * [Security warning](#security-warning)
+  * [API](#api)
+
 ## Overview
 
 1. For example, sending multiple Notifications from one device to several other
