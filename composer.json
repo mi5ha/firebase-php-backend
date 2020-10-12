@@ -1,7 +1,6 @@
 {
     "name": "mi5ha/firebase-backend-api",
     "description": "Backend API for Firebase",
-    "version": "1.0.0",
     "authors": [
         {
             "name": "mi5ha",
