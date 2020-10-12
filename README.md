@@ -42,6 +42,72 @@ composer create-project mi5ha/firebase-backend-api
 
 ## API
 
+### sendMulticast
+
+Send notifications from one device to multiple other devices.
+
+<details><summary><b>Details</b></summary>
+
+Path
+
+```
+http://<your-domain>/?method=sendMulticast
+```
+
+JSON request body
+
+```json
+{
+  "title": "I am Iron Man",
+  "deviceTokens":
+    [
+        "fqORTS66YYQHKnpSsdf0QIKl:APA91bEggEnA-NDaSRvFtHsdd3UQLw3miPSw0jINjrgg0DdaRUP9u2DXBE6Veq2br9qsmDI5q2S-VnA1SvSmBnrOKMCxyuLzhh0EY2YXvQRqrDL5nf5FC8sjjLAgenLm-voggrtjAdlW",
+        "f4fRp143affMgijGpVoj5I:APA91bGaaeqJ1IwtTmVvPVahdzeFbffvXizaL1u2iYGqWDhhht0aJuEFDt-qNHHHTgggUGfrM6qcrwKffFz7Sm-2PMsCFfkjjQjcNDbnn_tOcu9AF0OwGX21aaOpbXCUhhGyy4o5Zcr"
+    ],
+	"imageUrl": "https://i.insider.com/5b52400e51dfbe20008b45f9?width=750&format=jpeg&auto=webp"
+}
+```
+
+Success response
+
+```json
+{
+  "success": true
+}
+```
+
+Error response
+
+```json
+{
+  "success": false,
+  "errorMessages": [
+    "The registration token is not a valid FCM registration token",
+    "The registration token is not a valid FCM registration token"
+  ]
+}
+```
+
+errorMessages is an array of specific error messages for each device token.
+
+</details>
+
+<details><summary><b>You need to get device tokens to use this method.</b></summary>
+
+For example, from [React Native Firebase](https://rnfirebase.io) you can get this token with:
+
+```
+import messaging from '@react-native-firebase/messaging';
+
+// API: https://rnfirebase.io/reference/messaging#getToken
+let deviceToken = await messaging().getToken();
+```
+
+</details>
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
 ## License
 
 Firebase PHP Backend is licensed under the [MIT License](LICENSE).
