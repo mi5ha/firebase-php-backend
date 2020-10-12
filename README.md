@@ -50,6 +50,12 @@ composer create-project mi5ha/firebase-backend-api
 
 ## API
 
+With all requests send this header:
+
+```
+Content-Type: application/json
+```
+
 ### sendMulticastMessages
 
 Send notifications from one device to multiple other devices.
