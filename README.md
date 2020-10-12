@@ -28,6 +28,8 @@ composer create-project mi5ha/firebase-backend-api
 ### Configuration
 
 - [Download service account key](https://console.firebase.google.com/project/_/settings/serviceaccounts/adminsdk) file from Firebase
+    - Go to "Settings -> Service accounts"
+    - First click "Create service account" then "Generate new private key"
 - Put service key file somewhere outside document root
 - Open `config/config.php`, and add the path to your service key relative to config file
 
