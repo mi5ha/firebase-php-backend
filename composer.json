@@ -8,8 +8,8 @@
             "email": "byteout@gmail.com"
         }
     ],
-    "type": "library",
-    "keywords": ["codeception", "module", "psr-3", "psr", "log", "test"],
+    "type": "project",
+    "keywords": ["firebase", "firebase admin sdk", "notifications"],
     "license": "MIT",
     "require": {
         "php": ">=7.2.0 <8.0",

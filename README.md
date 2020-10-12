@@ -10,7 +10,7 @@ This is very simple PHP application that exposes some useful API endpoints that 
 
 1. For example, sending multiple Notifications from one device to several other
 devices can not be done without a server app.
-- This app uses [Firebase Admin SKD for PHP](https://github.com/kreait/firebase-php) under the hood
+2. This app uses [Firebase Admin SKD for PHP](https://github.com/kreait/firebase-php) under the hood
 
 ## Installation
 
