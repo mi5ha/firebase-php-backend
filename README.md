@@ -8,17 +8,17 @@ This is very simple PHP application that exposes some useful API endpoints that 
 
 ## Table of contents
 
-  * [Overview](#overview)
-  * [Requirements](#requirements)
-  * [Installation](#installation)
-  * [Security warning](#security-warning)
-  * [API](#api)
+- [Overview](#overview)
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [Security warning](#security-warning)
+- [API](#api)
 
 ## Overview
 
-1. For example, sending multiple Notifications from one device to several other
-devices can not be done without a server app.
-2. This app uses [Firebase Admin SKD for PHP](https://github.com/kreait/firebase-php) under the hood
+- For example, sending multiple Notifications from one device to several other
+   devices can not be done without a server app.
+- This app uses [Firebase Admin SKD for PHP](https://github.com/kreait/firebase-php) under the hood
 
 ## Requirements
 
@@ -36,8 +36,8 @@ composer create-project mi5ha/firebase-backend-api
 ### Configuration
 
 - [Download service account key](https://console.firebase.google.com/project/_/settings/serviceaccounts/adminsdk) file from Firebase
-    - Go to "Settings -> Service accounts"
-    - First click "Create service account" then "Generate new private key"
+  - Go to "Settings -> Service accounts"
+  - First click "Create service account" then "Generate new private key"
 - Put service key file somewhere outside document root
 - Open `config/config.php`, and add the path to your service key relative to config file
 
@@ -66,13 +66,12 @@ http://<your-domain>/?method=sendMulticast
 
 ```json
 {
-  "title": "I am Iron Man",
-  "deviceTokens":
-    [
+    "title": "I am Iron Man",
+    "deviceTokens": [
         "fqORTS66YYQHKnpSsdf0QIKl:APA91bEggEnA-NDaSRvFtHsdd3UQLw3miPSw0jINjrgg0DdaRUP9u2DXBE6Veq2br9qsmDI5q2S-VnA1SvSmBnrOKMCxyuLzhh0EY2YXvQRqrDL5nf5FC8sjjLAgenLm-voggrtjAdlW",
         "f4fRp143affMgijGpVoj5I:APA91bGaaeqJ1IwtTmVvPVahdzeFbffvXizaL1u2iYGqWDhhht0aJuEFDt-qNHHHTgggUGfrM6qcrwKffFz7Sm-2PMsCFfkjjQjcNDbnn_tOcu9AF0OwGX21aaOpbXCUhhGyy4o5Zcr"
     ],
-	"imageUrl": "https://i.insider.com/5b52400e51dfbe20008b45f9?width=750&format=jpeg&auto=webp"
+    "imageUrl": "https://i.insider.com/5b52400e51dfbe20008b45f9?width=750&format=jpeg&auto=webp"
 }
 ```
 
@@ -113,6 +112,7 @@ let deviceToken = await messaging().getToken();
 </details>
 
 ## Contributing
+
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 ## License
