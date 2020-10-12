@@ -56,7 +56,7 @@ Send notifications from one device to multiple other devices.
 
 <details><summary><b>Example</b></summary>
 
-**Path**
+**POST request**
 
 ```
 http://<your-domain>/?method=sendMulticastMessages
