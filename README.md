@@ -50,7 +50,7 @@ composer create-project mi5ha/firebase-backend-api
 
 ## API
 
-### sendMulticast
+### sendMulticastMessages
 
 Send notifications from one device to multiple other devices.
 
@@ -59,7 +59,7 @@ Send notifications from one device to multiple other devices.
 **Path**
 
 ```
-http://<your-domain>/?method=sendMulticast
+http://<your-domain>/?method=sendMulticastMessages
 ```
 
 **JSON request body**
@@ -99,7 +99,7 @@ errorMessages is an array of specific error messages for each device token.
 
 </details>
 
-<details><summary><b>You need to get device tokens to use this method.</b></summary>
+<details><summary><b>You need to get device tokens to use this method</b></summary>
 
 For example from [React Native Firebase](https://rnfirebase.io) you can get this token with [getToken()](https://rnfirebase.io/reference/messaging#getToken)
 

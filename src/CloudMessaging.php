@@ -10,7 +10,7 @@ use Kreait\Firebase\Messaging\RawMessageFromArray;
 
 class CloudMessaging
 {
-    public static function sendMulticast()
+    public static function sendMulticastMessages()
     {
         // SET POST PARAMS
         // ---------------

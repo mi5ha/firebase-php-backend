@@ -23,8 +23,8 @@ if (!isset($apiMethod)) {
 }
 
 // CALL API METHOD
-if ($apiMethod === 'sendMulticast') {
-    CloudMessaging::sendMulticast();
+if ($apiMethod === 'sendMulticastMessages') {
+    CloudMessaging::sendMulticastMessages();
 } else {
     API::response(false, null, ['Given method doesnt exist']);
 }
